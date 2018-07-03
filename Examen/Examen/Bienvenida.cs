@@ -39,7 +39,10 @@ namespace Examen
 
         private void button_partidasGuardadas_Click(object sender, EventArgs e)
         {
-
+            Partidas_Guardadas partidas_Guardadas = new Partidas_Guardadas();
+            partidas_Guardadas.ShowDialog();
+            Hide();
+            Show();
         }
     }
 }

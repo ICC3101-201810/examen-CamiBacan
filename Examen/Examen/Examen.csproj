@@ -63,6 +63,12 @@
     <Compile Include="Partida.Designer.cs">
       <DependentUpon>Partida.cs</DependentUpon>
     </Compile>
+    <Compile Include="Partidas_Guardadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Partidas_Guardadas.Designer.cs">
+      <DependentUpon>Partidas_Guardadas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Posiciones_Historicas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Partida.resx">
       <DependentUpon>Partida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Partidas_Guardadas.resx">
+      <DependentUpon>Partidas_Guardadas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Posiciones_Historicas.resx">
       <DependentUpon>Posiciones_Historicas.cs</DependentUpon>
