@@ -10,8 +10,13 @@ using System.Windows.Forms;
 
 namespace Examen
 {
+    [Serializable]
     public partial class Partida : Form
     {
+        List<string> datosPartida;
+        Timer timerAparece = new Timer();
+        Timer timerDesaparece = new Timer();
+
         bool goup;
         bool godown;
         bool goleft;
@@ -28,8 +33,8 @@ namespace Examen
 
         public Partida(string name)
         {
+            //Serializacion.Cargar(this);
             InitializeComponent();
-            label2.Visible = false;
             label3.Text = name;
         }
 
@@ -105,9 +110,10 @@ namespace Examen
                     {
                         pacman.Left = 0;
                         pacman.Top = 0;
-                        label2.Text = "GAME OVER";
-                        label2.Visible = true;
+                        MessageBox.Show("GAME OVER " + label3.Text + "\nPuntaje: " + score);
                         timer1.Stop();
+                        //datosPartida.Add(label3.Text);
+                        //datosPartida.Add(score.ToString());
                     }
                 }
 
@@ -155,10 +161,49 @@ namespace Examen
             {
                 ghost2y = -ghost2y;
             }
+                      
+
+
         }
 
-        private void label_timer_Click(object sender, EventArgs e)
+        public List<string> GetDatosPartida()
         {
+            return datosPartida;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            //datosPartida.Add(label3.Text);
+            //datosPartida.Add(score.ToString());
+            //Serializacion.Guardar(this);
+            MessageBox.Show("Se ha detenido la partida, podrás retomarla en la sección de partidas guardadas.", "", MessageBoxButtons.OK);
+            Close();
+            
+
+        }
+
+        private void InitializeFruitTimer()
+        {            
+            timerAparece.Interval = 30000;
+            timerDesaparece.Interval = 10000;
+            timerAparece.Tick += new EventHandler(timerAparece_Tick);
+            timerDesaparece.Tick += new EventHandler(timerDesaparece_Tick);
+            timerAparece.Start();
+
+
+        }
+        void timerAparece_Tick(object sender, EventArgs e)
+        {
+            timerAparece.Stop();
+            cherry.Visible = true;
+            uva.Visible = true;
+        }
+        void timerDesaparece_Tick(object sender, EventArgs e)
+        {
+            timerDesaparece.Stop();
+            cherry.Visible = false;
+            uva.Visible = false;
 
         }
     }

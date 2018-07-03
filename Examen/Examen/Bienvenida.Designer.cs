@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button_PartidaNueva = new System.Windows.Forms.Button();
             this.button_Posiciones = new System.Windows.Forms.Button();
+            this.button_partidasGuardadas = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -50,7 +51,7 @@
             this.button_PartidaNueva.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_PartidaNueva.Location = new System.Drawing.Point(280, 191);
             this.button_PartidaNueva.Name = "button_PartidaNueva";
-            this.button_PartidaNueva.Size = new System.Drawing.Size(206, 43);
+            this.button_PartidaNueva.Size = new System.Drawing.Size(228, 43);
             this.button_PartidaNueva.TabIndex = 1;
             this.button_PartidaNueva.Text = "Partida Nueva";
             this.button_PartidaNueva.UseVisualStyleBackColor = false;
@@ -60,12 +61,25 @@
             // 
             this.button_Posiciones.BackColor = System.Drawing.Color.Blue;
             this.button_Posiciones.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Posiciones.Location = new System.Drawing.Point(280, 240);
+            this.button_Posiciones.Location = new System.Drawing.Point(280, 289);
             this.button_Posiciones.Name = "button_Posiciones";
-            this.button_Posiciones.Size = new System.Drawing.Size(206, 43);
+            this.button_Posiciones.Size = new System.Drawing.Size(228, 43);
             this.button_Posiciones.TabIndex = 2;
             this.button_Posiciones.Text = "Tabla Posiciones";
             this.button_Posiciones.UseVisualStyleBackColor = false;
+            this.button_Posiciones.Click += new System.EventHandler(this.button_Posiciones_Click);
+            // 
+            // button_partidasGuardadas
+            // 
+            this.button_partidasGuardadas.BackColor = System.Drawing.Color.Blue;
+            this.button_partidasGuardadas.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_partidasGuardadas.Location = new System.Drawing.Point(280, 240);
+            this.button_partidasGuardadas.Name = "button_partidasGuardadas";
+            this.button_partidasGuardadas.Size = new System.Drawing.Size(228, 43);
+            this.button_partidasGuardadas.TabIndex = 3;
+            this.button_partidasGuardadas.Text = "Partidas Guardadas";
+            this.button_partidasGuardadas.UseVisualStyleBackColor = false;
+            this.button_partidasGuardadas.Click += new System.EventHandler(this.button_partidasGuardadas_Click);
             // 
             // Bienvenida
             // 
@@ -73,6 +87,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_partidasGuardadas);
             this.Controls.Add(this.button_Posiciones);
             this.Controls.Add(this.button_PartidaNueva);
             this.Controls.Add(this.label1);
@@ -88,6 +103,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button_PartidaNueva;
         private System.Windows.Forms.Button button_Posiciones;
+        private System.Windows.Forms.Button button_partidasGuardadas;
     }
 }
 

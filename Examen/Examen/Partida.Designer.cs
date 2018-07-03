@@ -36,7 +36,6 @@
             this.uva = new System.Windows.Forms.PictureBox();
             this.cherry = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label_timer = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -82,7 +81,7 @@
             // uva
             // 
             this.uva.Image = ((System.Drawing.Image)(resources.GetObject("uva.Image")));
-            this.uva.Location = new System.Drawing.Point(589, 218);
+            this.uva.Location = new System.Drawing.Point(538, 313);
             this.uva.Name = "uva";
             this.uva.Size = new System.Drawing.Size(25, 25);
             this.uva.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -94,7 +93,7 @@
             // 
             this.cherry.Cursor = System.Windows.Forms.Cursors.Default;
             this.cherry.Image = ((System.Drawing.Image)(resources.GetObject("cherry.Image")));
-            this.cherry.Location = new System.Drawing.Point(209, 99);
+            this.cherry.Location = new System.Drawing.Point(207, 99);
             this.cherry.Name = "cherry";
             this.cherry.Size = new System.Drawing.Size(25, 25);
             this.cherry.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -112,16 +111,6 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "label1";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Consolas", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(298, 148);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(152, 47);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "label2";
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
@@ -137,7 +126,6 @@
             this.label_timer.Size = new System.Drawing.Size(65, 23);
             this.label_timer.TabIndex = 7;
             this.label_timer.Text = "timer\r\n";
-            this.label_timer.Click += new System.EventHandler(this.label_timer_Click);
             // 
             // label3
             // 
@@ -156,7 +144,6 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label_timer);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cherry);
             this.Controls.Add(this.uva);
@@ -185,7 +172,6 @@
         private System.Windows.Forms.PictureBox uva;
         private System.Windows.Forms.PictureBox cherry;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label_timer;
         private System.Windows.Forms.Label label3;

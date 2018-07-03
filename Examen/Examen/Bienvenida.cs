@@ -28,5 +28,18 @@ namespace Examen
             Nombre nombre = new Nombre();
             nombre.ShowDialog();
         }
+
+        private void button_Posiciones_Click(object sender, EventArgs e)
+        {
+            Posiciones_Historicas posiciones_Historicas = new Posiciones_Historicas();
+            posiciones_Historicas.ShowDialog();
+            Hide();
+            Show();
+        }
+
+        private void button_partidasGuardadas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

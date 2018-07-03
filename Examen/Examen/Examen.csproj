@@ -63,8 +63,15 @@
     <Compile Include="Partida.Designer.cs">
       <DependentUpon>Partida.cs</DependentUpon>
     </Compile>
+    <Compile Include="Posiciones_Historicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Posiciones_Historicas.Designer.cs">
+      <DependentUpon>Posiciones_Historicas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serializacion.cs" />
     <EmbeddedResource Include="Bienvenida.resx">
       <DependentUpon>Bienvenida.cs</DependentUpon>
     </EmbeddedResource>
@@ -73,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Partida.resx">
       <DependentUpon>Partida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Posiciones_Historicas.resx">
+      <DependentUpon>Posiciones_Historicas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
